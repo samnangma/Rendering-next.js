@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Suspense } from 'react'
 import Loading from './loading'
 import Products from './products/page'
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Products/>
       
       </Suspense>
+      <Analytics />
     </main>
   )
 }
